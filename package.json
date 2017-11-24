@@ -14,5 +14,10 @@
     "hbs": "~4.0.1",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
   }
 }
