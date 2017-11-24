@@ -5,14 +5,33 @@ const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 
+const exphbs = require('express-handlebars')
+
 const index = require('./routes/index')
 const users = require('./routes/users')
 
 const app = express()
 
 // view engine setup
+const hbs = exphbs.create({
+    extname: '.hbs',
+    defaultLayout: 'main',
+    helpers: {
+        ifeq: function(a, b, options) {
+            if (a === b) {
+                return options.fn(this)
+            }
+            return options.inverse(this)
+        },
+        toJSON: function(object) {
+            return JSON.stringify(object)
+        }
+    }
+})
+
+app.engine('.hbs', hbs.engine)
 app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'hbs')
+app.set('view engine', '.hbs')
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
