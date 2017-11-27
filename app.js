@@ -19,13 +19,11 @@ const hbs = exphbs.create({
     extname: '.hbs',
     defaultLayout: 'main',
     helpers: {
-        ifeq: function(a, b, options) {
-            if (a === b) {
-                return options.fn(this)
-            }
+        ifeq(a, b, options) {
+            if (a === b) return options.fn(this)
             return options.inverse(this)
         },
-        toJSON: function(object) {
+        toJSON(object) {
             return JSON.stringify(object)
         }
     }
