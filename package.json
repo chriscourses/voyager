@@ -9,6 +9,7 @@
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv-safe": "^4.0.4",
     "express": "~4.15.5",
     "express-handlebars": "^3.0.0",
     "hbs": "~4.0.1",

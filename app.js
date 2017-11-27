@@ -7,6 +7,8 @@ const bodyParser = require('body-parser')
 
 const exphbs = require('express-handlebars')
 
+require('dotenv-safe').load() // Must load as early as possible
+
 const index = require('./routes/index')
 const users = require('./routes/users')
 
