@@ -9,8 +9,7 @@ const exphbs = require('express-handlebars')
 
 require('dotenv-safe').load() // Must load as early as possible
 
-const index = require('./routes/index')
-const users = require('./routes/users')
+const routes = require('./routes/web')
 
 const app = express()
 
@@ -41,8 +40,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', index)
-app.use('/users', users)
+app.use('/', routes)
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
