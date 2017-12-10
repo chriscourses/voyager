@@ -1,8 +1,12 @@
 const express = require('express')
 const router = express.Router()
+const User = require('../models/User')
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
+router.get('/', async (req, res, next) => {
+    // const user = await User.where('id', 1).fetch()
+    // const username = user.get('username')
+
     res.render('index', { title: 'Express' })
 })
 
