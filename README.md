@@ -11,7 +11,7 @@ Voyager is a Node and SQL based web application framework that provides everythi
 - [Robust front-end build system (Webpack)](https://webpack.js.org/)
 - Modern ES6 syntax
 
-Built on top of Express, and modeled after Rails and Laravel, Voyager provides the option to scaffold common app features such as user authentication, setting you up with a strong, secure foundation for your next user-based app.
+Built on top of Express, and modeled after Rails and Laravel, Voyager provides a complete solution to getting up and running with a user-based app as quickly as possible.
 
 ## Getting Started
 
