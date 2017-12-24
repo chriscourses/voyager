@@ -15,21 +15,21 @@ Built on top of Express, and modeled after Rails and Laravel, Voyager provides a
 
 ## Getting Started
 
-1. Install Voyager by cloning the repo:
+1. Download the [Voyager command line interface (CLI)]((https://github.com/chriscourses/voyager-cli)) with NPM:
 
-        git clone https://github.com/christopher4lis/voyager.git myapp
+        npm install -g voyager-cli
 
-2. Install project dependencies using NPM or Yarn:
+2. Create a new Voyager project, with or without auth:
 
-        npm install
+        voyager new newApp
     or
 
-        yarn
+        voyager new newApp --auth
 
-3. Change directory to `myapp` and start the web server:
+3. Change directory to `newApp` and start the Voyager server:
 
-        cd myapp
-        nodemon
+        cd newApp
+        voyager start
 
 4. Open up a new terminal tab and run webpack:
 
