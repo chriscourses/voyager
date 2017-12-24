@@ -4,10 +4,11 @@ const favicon = require('serve-favicon')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+const config = require('./config/app')
 
 const exphbs = require('express-handlebars')
 
-require('dotenv-safe').load() // Must load as early as possible
+if (config.useEnv) require('dotenv-safe').load() // Must load as early as possible
 
 const routes = require('./routes/web')
 
