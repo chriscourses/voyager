@@ -1,0 +1,22 @@
+.index-container {
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.body-logo {
+    width: 280px;
+}
+
+.index-nav {
+    a {
+        display: inline-block;
+        margin: 0 3px;
+    }
+}

@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     // const user = await User.where('id', 1).fetch()
     // const username = user.get('username')
 
-    res.render('index', { title: 'Express' })
+    res.render('index', { title: 'Voyager' })
 })
 
 module.exports = router

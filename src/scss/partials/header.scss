@@ -1,0 +1,21 @@
+header {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+}
+
+.header-nav {
+    a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}

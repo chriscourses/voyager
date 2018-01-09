@@ -1,6 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+header {
+  padding: 12px;
+  border-bottom: 1px solid #eee; }
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-logo {
+  width: 50px; }
+
+.header-nav a {
+  display: inline-block;
+  margin: 0 5px; }
+
+.index-container {
+  height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .index-container h1 {
+    margin-bottom: 0; }
+
+.body-logo {
+  width: 280px; }
+
+.index-nav a {
+  display: inline-block;
+  margin: 0 3px; }
+
 body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
+  margin: 0;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  color: #333; }
 
 a {
-  color: #00b7ff; }
+  color: #00b7ff;
+  text-decoration: none; }
