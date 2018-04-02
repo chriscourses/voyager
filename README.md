@@ -26,6 +26,8 @@ Built on top of Express, and modeled after Rails and Laravel, Voyager provides a
 
         voyager new newApp --auth
 
+_Notice: You must run the built-in Knex migrations and add a .env file with valid credentials for the auth version to work. Further auth related instructions can be found under **Auth Setup** below._
+
 3. Change directory to `newApp` and start the Voyager server:
 
         cd newApp
@@ -36,6 +38,38 @@ Built on top of Express, and modeled after Rails and Laravel, Voyager provides a
         webpack
 
 5. Your app should open up automatically at `http://localhost:3001` and you should see the Voyager start up page.
+
+### Auth Setup
+To get started with Voyager's built-in authentication, you must follow a few steps required to connect your app to a database and utilize key functionalities such as email confirmations and password resets.
+
+1. Create a file called `.env` in the root of your newly generated Voyager project 
+2. Copy the contents of `.env.example` and paste inside of the newly created `.env` file:
+       
+        DB_HOST=
+        DB_USER=
+        DB_PASSWORD=
+        DB_NAME=
+
+        MAILGUN_KEY=
+3. Create a MySQL database for your app, grab a Mailgun API key, and insert the corresponding values into the `.env` file. A finished version will look something like this for a local server:
+
+        DB_HOST=localhost
+        DB_USER=root
+        DB_PASSWORD=root
+        DB_NAME=newApp
+        
+        MAILGUN_KEY=key-kfvud83k3kf3vbn22k223222
+        
+4. Running `voyager start` will now run your app with a connection to your database, but we're not done just yet—we still need to run database migrations to ensure all of the necessary tables are available for our auth functionality to work:
+
+        $ knex migrate:latest
+5. Restart the Voyager server:
+    
+        $ voyager start
+6. Open a new tab in terminal and start webpack:
+        
+        $ webpack
+You should now have a fully functioning app with auth features such as user registration, user login, email confirmation, and password reset functionality. For more information and instruction regarding Voyager auth, check the [Chris Courses YouTube channel](https://www.youtube.com/c/chriscourses) for Voyager tutorials and more.
 
 
 ## Quick Docs
