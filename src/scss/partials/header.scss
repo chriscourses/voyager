@@ -1,6 +1,7 @@
 header {
     padding: 12px;
     border-bottom: 1px solid #eee;
+    background: white;
 }
 
 .header-container {
@@ -10,12 +11,19 @@ header {
 }
 
 .header-logo {
-    width: 50px;
+    width: 100px;
+    @include breakpoint($screen-sm-min) {
+        width: 150px;
+    }
 }
 
 .header-nav {
     a {
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 15px;
+        font-family: $roboto;
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
     }
 }

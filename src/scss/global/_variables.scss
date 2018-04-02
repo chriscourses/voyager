@@ -1,1 +1,35 @@
+$light-gray: #c5c5c5;
+$gray: #636363;
+$red: #ff0000;
+$purple: #635afe;
+
 $lato: 'Lato', sans-serif;
+$roboto: 'Roboto Mono', monospace;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin breakpoint($point) {
+    @if $point == $screen-sm-min {
+        @media screen and (min-width: $screen-sm-min) {
+            @content;
+        }
+    }
+    @elseif $point == $screen-md-min {
+        @media screen and (min-width: $screen-md-min) {
+            @content;
+        }
+    }
+    @elseif $point == $screen-lg-min {
+        @media screen and (min-width: $screen-lg-min) {
+            @content;
+        }
+    }
+    @elseif $point == $screen-xl-min {
+        @media screen and (min-width: $screen-xl-min) {
+            @content;
+        }
+    }
+}

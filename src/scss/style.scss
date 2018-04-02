@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+@import './fonts/lato';
+@import './fonts/roboto-mono';
 
 // Global
 @import './global/_variables';
@@ -13,7 +14,6 @@
 
 body {
     margin: 0;
-    font-size: 14px;
     font-family: $lato;
     color: #333;
 }
@@ -21,4 +21,9 @@ body {
 a {
     color: #00b7ff;
     text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
 }

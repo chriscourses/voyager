@@ -1,313 +1,161 @@
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
 .m0 {
     margin: 0;
-    @include breakpoint($screen-sm-min) {
-        margin: initial;
-    }
 }
 
-// margin-top
 .mt0 {
     margin-top: 0;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
 }
 
-.mt10 {
-    margin-top: 10px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt25 {
-    margin-top: 25px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt50 {
-    margin-top: 50px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt75 {
-    margin-top: 75px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt100 {
-    margin-top: 100px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt125 {
-    margin-top: 125px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt150 {
-    margin-top: 150px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt175 {
-    margin-top: 175px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-.mt200 {
-    margin-top: 200px;
-    @include breakpoint($screen-sm-min) {
-        margin-top: initial;
-    }
-}
-
-// margin-bottom
 .mb0 {
     margin-bottom: 0;
+}
+
+// Mobile Margin Top
+.mmt10 {
+    margin-top: 10px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-top: 0;
     }
 }
 
-.mb10 {
+.mmt25 {
+    margin-top: 25px;
+    @include breakpoint($screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+.mmt50 {
+    margin-top: 50px;
+    @include breakpoint($screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+.mmt75 {
+    margin-top: 75px;
+    @include breakpoint($screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+.mmt100 {
+    margin-top: 100px;
+    @include breakpoint($screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
+// Mobile Margin Bottom
+.mmb10 {
     margin-bottom: 10px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-bottom: 0;
     }
 }
 
-.mb25 {
+.mmb25 {
     margin-bottom: 25px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-bottom: 0;
     }
 }
 
-.mb50 {
+.mmb50 {
     margin-bottom: 50px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-bottom: 0;
     }
 }
 
-.mb75 {
+.mmb75 {
     margin-bottom: 75px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-bottom: 0;
     }
 }
 
-.mb100 {
+.mmb100 {
     margin-bottom: 100px;
     @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
+        margin-bottom: 0;
     }
 }
 
-.mb125 {
-    margin-bottom: 125px;
-    @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
-    }
-}
-
-.mb150 {
-    margin-bottom: 150px;
-    @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
-    }
-}
-
-.mb175 {
-    margin-bottom: 175px;
-    @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
-    }
-}
-
-.mb200 {
-    margin-bottom: 200px;
-    @include breakpoint($screen-sm-min) {
-        margin-bottom: initial;
-    }
-}
-
-// padding-top
-.pt0 {
-    padding-top: 0;
-    @include breakpoint($screen-sm-min) {
-        padding-top: initial;
-    }
-}
-
-.pt10 {
+// Mobile Padding Top
+.mpt10 {
     padding-top: 10px;
     @include breakpoint($screen-sm-min) {
-        padding-top: initial;
+        padding-top: 0;
     }
 }
 
-.pt25 {
+.mpt25 {
     padding-top: 25px;
     @include breakpoint($screen-sm-min) {
-        padding-top: initial;
+        padding-top: 0;
     }
 }
 
-.pt50 {
+.mpt50 {
     padding-top: 50px;
     @include breakpoint($screen-sm-min) {
-        padding-top: initial;
+        padding-top: 0;
     }
 }
 
-.pt75 {
+.mpt75 {
     padding-top: 75px;
     @include breakpoint($screen-sm-min) {
-        padding-top: initial;
+        padding-top: 0;
     }
 }
 
-.pt100 {
+.mpt100 {
     padding-top: 100px;
     @include breakpoint($screen-sm-min) {
-        padding-top: initial;
+        padding-top: 0;
     }
 }
 
-.pt125 {
-    padding-top: 125px;
-    @include breakpoint($screen-sm-min) {
-        padding-top: initial;
-    }
-}
-
-.pt150 {
-    padding-top: 150px;
-    @include breakpoint($screen-sm-min) {
-        padding-top: initial;
-    }
-}
-
-.pt175 {
-    padding-top: 175px;
-    @include breakpoint($screen-sm-min) {
-        padding-top: initial;
-    }
-}
-
-.pt200 {
-    padding-top: 200px;
-    @include breakpoint($screen-sm-min) {
-        padding-top: initial;
-    }
-}
-
-// padding-bottom
-.pb0 {
-    padding-bottom: 0;
-    @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
-    }
-}
-
-.pb10 {
+// Mobile Padding Bottom
+.mpb10 {
     padding-bottom: 10px;
     @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
+        padding-bottom: 0;
     }
 }
 
-.pb25 {
+.mpb25 {
     padding-bottom: 25px;
     @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
+        padding-bottom: 0;
     }
 }
 
-.pb50 {
+.mpb50 {
     padding-bottom: 50px;
     @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
+        padding-bottom: 0;
     }
 }
 
-.pb75 {
+.mpb75 {
     padding-bottom: 75px;
     @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
+        padding-bottom: 0;
     }
 }
 
-.pb100 {
+.mpb100 {
     padding-bottom: 100px;
     @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
-    }
-}
-
-.pb125 {
-    padding-bottom: 125px;
-    @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
-    }
-}
-
-.pb150 {
-    padding-bottom: 150px;
-    @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
-    }
-}
-
-.pb175 {
-    padding-bottom: 175px;
-    @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
-    }
-}
-
-.pb200 {
-    padding-bottom: 200px;
-    @include breakpoint($screen-sm-min) {
-        padding-bottom: initial;
+        padding-bottom: 0;
     }
 }
 
 @include breakpoint($screen-sm-min) {
-    .m0 {
-        margin: 0;
-    }
-
-    // margin-top
-    .mt0 {
-        margin-top: 0;
-    }
-
+    // Margin Top
     .mt10 {
         margin-top: 10px;
     }
@@ -328,29 +176,21 @@
         margin-top: 100px;
     }
 
-    .mt125 {
-        margin-top: 125px;
-    }
-
     .mt150 {
         margin-top: 150px;
-    }
-
-    .mt175 {
-        margin-top: 175px;
     }
 
     .mt200 {
         margin-top: 200px;
     }
 
-    // margin-bottom
-    .mb0 {
-        margin-bottom: 0;
-    }
-
+    // Margin Bottom
     .mb10 {
         margin-bottom: 10px;
+    }
+
+    .mb15 {
+        margin-bottom: 15px;
     }
 
     .mb25 {
@@ -369,27 +209,7 @@
         margin-bottom: 100px;
     }
 
-    .mb125 {
-        margin-bottom: 125px;
-    }
-
-    .mb150 {
-        margin-bottom: 150px;
-    }
-
-    .mb175 {
-        margin-bottom: 175px;
-    }
-
-    .mb200 {
-        margin-bottom: 200px;
-    }
-
-    // padding-top
-    .pt0 {
-        padding-top: 0;
-    }
-
+    // Padding Top
     .pt10 {
         padding-top: 10px;
     }
@@ -426,11 +246,7 @@
         padding-top: 200px;
     }
 
-    // padding-bottom
-    .pb0 {
-        padding-bottom: 0;
-    }
-
+    // Padding Bottom
     .pb10 {
         padding-bottom: 10px;
     }
@@ -451,27 +267,13 @@
         padding-bottom: 100px;
     }
 
-    .pb125 {
-        padding-bottom: 125px;
-    }
-
     .pb150 {
         padding-bottom: 150px;
-    }
-
-    .pb175 {
-        padding-bottom: 175px;
     }
 
     .pb200 {
         padding-bottom: 200px;
     }
-}
-
-.bg-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
 }
 
 .hide-desktop {
