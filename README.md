@@ -33,7 +33,7 @@ Built on top of Express, and modeled after Rails and Laravel, Voyager provides a
 
 4. Open up a new terminal tab and run webpack:
 
-        webpack
+        npx webpack
 
 5. Your app should open up automatically at `http://localhost:3001` and you should see the Voyager start up page.
 
