@@ -32,3 +32,4 @@ yarn-error.log
 
 .env
 *.todo
+.ds_store
